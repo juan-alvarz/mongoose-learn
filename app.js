@@ -7,6 +7,8 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+// para usar datos estáticos, o datos locales
+app.use(express.static("storage"));
 
 const port = process.env.PORT || 3000;
 
